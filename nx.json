@@ -42,11 +42,14 @@
         "SCOPE(PRODUCT2)"
       ]
     },
-    "Feature.Themes": {
+    "Features.Themes": {
       "tags": [
         "SCOPE(THEMES)",
         "SCOPE(FRONTEND)"
       ]
+    },
+    "Features.Components": {
+      "tags": []
     }
   }
 }

@@ -44,3 +44,18 @@ The Top Level Workspace structure, is defined in `nx.json` file, under the `work
     "libsDir": "Libraries"
 }
 ```
+
+## Workflow Tips & Tricks
+
+Nx, provides commands that makes our Development lifecycle, easier. Commands that `Create App, Libs, Components`,
+and commands for running projects faster, without the need for documenations.
+
+> 👨🏻‍💻 Remember, that your single source of truth in an Nx Monorepo is the `workspace.json`. And it should always be in sync with `nx.json`.
+
+| Commit Messages                                                                                                          | Description                   |
+| ------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
+| `yarn nx generate @nrwl/react:application --name=AppName --directory=DirName --pascalCaseFiles=true --routing=true`      | Generates a React Application |
+| `yarn nx generate @nrwl/react:library --name=LibName --directory=DirName --pascalCaseFiles=true --routing=false`         | Generates a React Library     |
+| `yarn nx generate @nrwl/react:component --name=ComponentName --project=ProjectName --pascalCaseFiles=true routing=false` | Generates a React Component   |
+
+> 👨🏻‍💻 Remember, that every command comes with 2 standard flags. To invode CLI Help just append `--help` and to see the output without making any changes append `--dry-run`.

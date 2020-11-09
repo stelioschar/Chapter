@@ -151,7 +151,7 @@
         }
       }
     },
-    "Feature.Themes": {
+    "Features.Themes": {
       "root": "Libraries/Features/Themes",
       "sourceRoot": "Libraries/Features/Themes/src",
       "projectType": "library",
@@ -169,6 +169,29 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "Libraries/Features/Themes/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "Features.Components": {
+      "root": "Libraries/Features/Components",
+      "sourceRoot": "Libraries/Features/Components/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "Libraries/Features/Components/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "Libraries/Features/Components/jest.config.js",
             "passWithNoTests": true
           }
         }
