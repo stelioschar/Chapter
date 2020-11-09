@@ -22,5 +22,13 @@
       }
     }
   },
-  "projects": {}
+  "workspaceLayout": {
+    "appsDir": "Packages",
+    "libsDir": "Libraries"
+  },
+  "projects": {
+    "Product1.Frontend": {
+      "tags": []
+    }
+  }
 }

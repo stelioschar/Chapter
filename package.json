@@ -1,7 +1,8 @@
 {
   "name": "chapter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
@@ -25,17 +26,67 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help"
   },
-  "private": true,
-  "dependencies": {},
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": [
+      "yarn nx affected:lint --uncommitted --parallel --fix",
+      "yarn nx format:write --affected --uncommitted --parallel",
+      "yarn nx test --affected --uncommitted --parallel --maxParallel=5"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged --verbose"
+    }
+  },
+  "dependencies": {
+    "@emotion/core": "10.0.28",
+    "@emotion/styled": "10.0.27",
+    "document-register-element": "1.13.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-router-dom": "5.2.0"
+  },
   "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "@babel/preset-react": "7.9.4",
+    "@babel/preset-typescript": "7.9.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@emotion/babel-preset-css-prop": "10.0.27",
     "@nrwl/cli": "10.3.3",
+    "@nrwl/eslint-plugin-nx": "10.3.3",
+    "@nrwl/jest": "10.3.3",
+    "@nrwl/next": "^10.3.3",
+    "@nrwl/nx-plugin": "^10.3.3",
+    "@nrwl/react": "^10.3.3",
+    "@nrwl/storybook": "^10.3.3",
+    "@nrwl/web": "10.3.3",
     "@nrwl/workspace": "10.3.3",
+    "@testing-library/react": "10.4.1",
+    "@types/jest": "26.0.8",
     "@types/node": "~8.9.4",
+    "@types/react": "16.9.38",
+    "@types/react-dom": "16.9.8",
+    "@types/react-router-dom": "5.1.5",
+    "@typescript-eslint/eslint-plugin": "4.3.0",
+    "@typescript-eslint/parser": "4.3.0",
+    "babel-jest": "26.2.2",
     "dotenv": "6.2.0",
+    "eslint": "7.10.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-react-hooks": "4.0.4",
+    "husky": "^4.3.0",
+    "jest": "26.2.2",
+    "lint-staged": "^10.5.1",
+    "prettier": "2.0.4",
+    "ts-jest": "26.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "eslint": "7.10.0",
-    "typescript": "~4.0.3",
-    "prettier": "2.0.4"
+    "typescript": "~4.0.3"
   }
 }
