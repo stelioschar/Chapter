@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./app";
 
 describe("App", () => {
-  it("should render successfully", () => {
+  it("should render the [BASE ELEMENT]", () => {
     const { baseElement } = render(
       <BrowserRouter>
         <App />
@@ -16,7 +16,7 @@ describe("App", () => {
     expect(baseElement).toBeTruthy();
   });
 
-  it("should have a greeting as the title", () => {
+  it("should render [WELCOME MESSAGE]", () => {
     const { getByText } = render(
       <BrowserRouter>
         <App />

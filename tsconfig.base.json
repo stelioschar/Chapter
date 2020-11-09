@@ -18,7 +18,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@chapter/Features/Themes": ["Libraries/Features/Themes/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

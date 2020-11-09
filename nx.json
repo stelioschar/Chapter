@@ -34,13 +34,17 @@
   "projects": {
     "Product1.Frontend": {
       "tags": [
-        "SCOPE(PRODUCT1)",
-        "SCOPE(FRONTEND)"
+        "SCOPE(PRODUCT1)"
       ]
     },
     "Product2.Frontend": {
       "tags": [
-        "SCOPE(PRODUCT2)",
+        "SCOPE(PRODUCT2)"
+      ]
+    },
+    "Feature.Themes": {
+      "tags": [
+        "SCOPE(THEMES)",
         "SCOPE(FRONTEND)"
       ]
     }

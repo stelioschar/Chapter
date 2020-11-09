@@ -15,7 +15,9 @@
             "main": "Packages/Product1/Frontend/src/main.tsx",
             "polyfills": "Packages/Product1/Frontend/src/polyfills.ts",
             "tsConfig": "Packages/Product1/Frontend/tsconfig.app.json",
-            "assets": ["Packages/Product1/Frontend/src/assets"],
+            "assets": [
+              "Packages/Product1/Frontend/src/assets"
+            ],
             "styles": [],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -60,7 +62,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["Packages/Product1/Frontend/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "Packages/Product1/Frontend/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
@@ -86,7 +90,9 @@
             "main": "Packages/Product2/Frontend/src/main.tsx",
             "polyfills": "Packages/Product2/Frontend/src/polyfills.ts",
             "tsConfig": "Packages/Product2/Frontend/tsconfig.app.json",
-            "assets": ["Packages/Product2/Frontend/src/assets"],
+            "assets": [
+              "Packages/Product2/Frontend/src/assets"
+            ],
             "styles": [],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -131,13 +137,38 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["Packages/Product2/Frontend/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "Packages/Product2/Frontend/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "Packages/Product2/Frontend/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "Feature.Themes": {
+      "root": "Libraries/Features/Themes",
+      "sourceRoot": "Libraries/Features/Themes/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "Libraries/Features/Themes/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "Libraries/Features/Themes/jest.config.js",
             "passWithNoTests": true
           }
         }
