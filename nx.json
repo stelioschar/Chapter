@@ -1,7 +1,7 @@
 {
   "npmScope": "chapter",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "workspace.json": "*",
@@ -18,7 +18,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -28,10 +33,16 @@
   },
   "projects": {
     "Product1.Frontend": {
-      "tags": ["SCOPE(PRODUCT1)", "SCOPE(FRONTEND)"]
+      "tags": [
+        "SCOPE(PRODUCT1)",
+        "SCOPE(FRONTEND)"
+      ]
     },
     "Product2.Frontend": {
-      "tags": ["SCOPE(PRODUCT2)", "SCOPE(FRONTEND)"]
+      "tags": [
+        "SCOPE(PRODUCT2)",
+        "SCOPE(FRONTEND)"
+      ]
     }
   }
 }

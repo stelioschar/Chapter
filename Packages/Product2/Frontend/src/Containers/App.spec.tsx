@@ -23,6 +23,6 @@ describe("App", () => {
       </BrowserRouter>,
     );
 
-    expect(getByText("Welcome to Product2.Frontend!")).toBeTruthy();
+    expect(getByText("Welcome to Product2.Frontend")).toBeTruthy();
   });
 });
