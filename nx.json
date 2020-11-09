@@ -28,7 +28,10 @@
   },
   "projects": {
     "Product1.Frontend": {
-      "tags": []
+      "tags": ["SCOPE(PRODUCT1)", "SCOPE(FRONTEND)"]
+    },
+    "Product2.Frontend": {
+      "tags": ["SCOPE(PRODUCT2)", "SCOPE(FRONTEND)"]
     }
   }
 }

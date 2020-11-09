@@ -71,6 +71,77 @@
           }
         }
       }
+    },
+    "Product2.Frontend": {
+      "root": "Packages/Product2/Frontend",
+      "sourceRoot": "Packages/Product2/Frontend/src",
+      "projectType": "application",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/web:build",
+          "options": {
+            "outputPath": "dist/Packages/Product2/Frontend",
+            "index": "Packages/Product2/Frontend/src/index.html",
+            "main": "Packages/Product2/Frontend/src/main.tsx",
+            "polyfills": "Packages/Product2/Frontend/src/polyfills.ts",
+            "tsConfig": "Packages/Product2/Frontend/tsconfig.app.json",
+            "assets": ["Packages/Product2/Frontend/src/assets"],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "Packages/Product2/Frontend/src/environments/environment.ts",
+                  "with": "Packages/Product2/Frontend/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "Product2.Frontend:build",
+            "port": 9030
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "Product2.Frontend:build:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["Packages/Product2/Frontend/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "Packages/Product2/Frontend/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
