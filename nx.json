@@ -88,7 +88,22 @@
       ]
     },
     "product1.website": {
-      "tags": []
+      "tags": [
+        "SCOPE(PRODUCT1)"
+      ]
+    },
+    "product3.frontend": {
+      "tags": [
+        "SCOPE(PRODUCT3)"
+      ]
+    },
+    "product3.integration": {
+      "tags": [
+        "SCOPE(PRODUCT3)"
+      ],
+      "implicitDependencies": [
+        "product3.frontend"
+      ]
     }
   }
 }

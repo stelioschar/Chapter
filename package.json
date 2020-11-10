@@ -27,7 +27,7 @@
     "help": "nx help"
   },
   "lint-staged": {
-    "{Packages,Libraries,Scripts,Tools}*.{js,jsx,ts,tsx,json,md}": [
+    "*.{js,jsx,ts,tsx,json,md}": [
       "yarn nx affected --target=lint  --parallel=true --base=origin/main",
       "yarn nx affected --target=format:write  --parallel=true --base=origin/main",
       "yarn nx affected --target=test  --parallel=true --base=origin/main"
@@ -71,6 +71,7 @@
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.0.0",
     "@nrwl/cli": "10.3.3",
+    "@nrwl/cypress": "10.3.3",
     "@nrwl/eslint-plugin-nx": "10.3.3",
     "@nrwl/express": "^10.3.3",
     "@nrwl/jest": "10.3.3",
@@ -95,9 +96,11 @@
     "@typescript-eslint/eslint-plugin": "4.3.0",
     "@typescript-eslint/parser": "4.3.0",
     "babel-jest": "26.2.2",
+    "cypress": "^4.1.0",
     "dotenv": "6.2.0",
     "eslint": "7.10.0",
     "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "2.21.2",
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-react": "7.20.0",

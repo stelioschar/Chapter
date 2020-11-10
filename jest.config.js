@@ -10,5 +10,6 @@ module.exports = {
     "<rootDir>/Packages/Product1/Backend",
     "<rootDir>/Packages/Product2/Backend",
     "<rootDir>/Packages/Product1/Website",
+    "<rootDir>/Packages/Product3/Frontend",
   ],
 };
