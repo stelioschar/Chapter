@@ -8,7 +8,7 @@ import AppRouter from "../Routers";
 export const App = () => {
   return (
     <>
-      <MaterialHeader title="Product1" buttonText="Login" url="/features" />
+      <MaterialHeader title="Product1" buttonText="Login" url="/auth" />
       <Container>
         <Box>
           <Header>Welcome to Product1:Frontend</Header>

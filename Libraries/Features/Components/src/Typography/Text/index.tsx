@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from "react";
 import { space, typography, color, layout } from "styled-system";
+import { IMainTheme } from "@chapter/Features/Themes";
 
 import styled from "@emotion/styled";
 
-const EmotionText = styled.p`
+const EmotionText = styled.p<IMainTheme>`
   ${color};
   ${space};
   ${layout};

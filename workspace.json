@@ -219,6 +219,52 @@
           }
         }
       }
+    },
+    "Features.Product1": {
+      "root": "Libraries/Features/Product1",
+      "sourceRoot": "Libraries/Features/Product1/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "Libraries/Features/Product1/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "Libraries/Features/Product1/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "Features.Product2": {
+      "root": "Libraries/Features/Product2",
+      "sourceRoot": "Libraries/Features/Product2/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "Libraries/Features/Product2/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "Libraries/Features/Product2/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

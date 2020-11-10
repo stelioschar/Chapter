@@ -1,3 +1,4 @@
+import { IMainTheme } from '@chapter/Features/Themes';
 import styled from "@emotion/styled";
 import {
   background,
@@ -12,7 +13,7 @@ import {
   typography,
 } from "styled-system";
 
-const Box = styled.div`
+const Box = styled.div<IMainTheme>`
   ${background}
   ${border}
   ${color}
@@ -23,7 +24,7 @@ const Box = styled.div`
   ${shadow}
   ${space}
   ${typography}
-  font-family: ${(props) => props.theme.fonts.body};
+  font-family: ${({theme}) => theme.fonts.body};
 `;
 
 export default Box;

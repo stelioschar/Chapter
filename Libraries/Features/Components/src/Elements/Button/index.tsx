@@ -1,10 +1,11 @@
+import { IMainTheme } from "@chapter/Features/Themes";
 import styled from "@emotion/styled";
 import { variant, space, color, typography, layout, SpaceProps } from "styled-system";
 
 type Variant = "primary" | "secondary" | "pill" | "blank";
 type Size = "small" | "";
 
-interface ButtonProps extends SpaceProps {
+interface ButtonProps extends SpaceProps, IMainTheme {
   variant?: Variant;
   size?: Size;
 }
@@ -26,15 +27,15 @@ const Button = styled.button<ButtonProps>`
   font-size: 1rem;
   display: inline-block;
   padding: 0.5rem 0.75rem;
-  color: ${({ theme }: any) => theme.colors.heading};
-  font-family: ${({ theme }: any) => theme.fonts.body};
+  color: ${({ theme }) => theme.colors.heading};
+  font-family: ${({ theme }) => theme.fonts.body};
   cursor: pointer;
-  font-weight: ${({ theme }: any) => theme.fontWeights.semiBold};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   background-color: transparent;
   &:focus {
     outline: none;
   }
-  ${({ theme }: any) =>
+  ${({ theme }) =>
     variant({
       variants: {
         primary: {

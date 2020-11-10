@@ -59,3 +59,10 @@ and commands for running projects faster, without the need for documenations.
 | `yarn nx generate @nrwl/react:component --name=ComponentName --project=ProjectName --pascalCaseFiles=true routing=false` | Generates a React Component   |
 
 > 👨🏻‍💻 Remember, that every command comes with 2 standard flags. To invode CLI Help just append `--help` and to see the output without making any changes append `--dry-run`.
+
+## Feature Driven Development(FDD)
+
+The Applications and Libraries Folders were designed to follow the 5 STEP Rule, that FDD promotes. That means, that 20%-30% of our dode will live
+in Packages, and around 70%-80% of our code will be placed under Libraries.
+
+That has a lot of advantages. From our CI processes running quicker and effectively to our Dev processes. You can read more about FDD in this [link](https://www.productplan.com/glossary/feature-driven-development/)

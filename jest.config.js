@@ -5,5 +5,7 @@ module.exports = {
     "<rootDir>/Libraries/Features/Themes",
     "<rootDir>/Libraries/Features/Components",
     "<rootDir>/Libraries/Features/Shared",
+    "<rootDir>/Libraries/Features/Product1",
+    "<rootDir>/Libraries/Features/Product2",
   ],
 };
