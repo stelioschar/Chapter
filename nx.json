@@ -27,25 +27,31 @@
     "libsDir": "Libraries"
   },
   "projects": {
-    "Product1.Frontend": {
+    "product1.frontend": {
       "tags": ["SCOPE(PRODUCT1)"]
     },
-    "Product2.Frontend": {
+    "product2.frontend": {
       "tags": ["SCOPE(PRODUCT2)"]
     },
-    "Features.Themes": {
+    "features.themes": {
       "tags": ["SCOPE(THEMES)", "SCOPE(FRONTEND)"]
     },
-    "Features.Components": {
+    "features.components": {
       "tags": []
     },
-    "Features.Shared": {
+    "features.shared": {
       "tags": []
     },
-    "Features.Product1": {
+    "features.product1": {
       "tags": []
     },
-    "Features.Product2": {
+    "features.product2": {
+      "tags": []
+    },
+    "product1.backend": {
+      "tags": []
+    },
+    "product2.backend": {
       "tags": []
     }
   }

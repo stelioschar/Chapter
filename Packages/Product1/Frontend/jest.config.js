@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: "Product1.Frontend",
+  displayName: "product1.frontend",
   preset: "../../../jest.preset.js",
   transform: {
     "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "@nrwl/react/plugins/jest",

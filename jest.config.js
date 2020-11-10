@@ -7,5 +7,7 @@ module.exports = {
     "<rootDir>/Libraries/Features/Shared",
     "<rootDir>/Libraries/Features/Product1",
     "<rootDir>/Libraries/Features/Product2",
+    "<rootDir>/Packages/Product1/Backend",
+    "<rootDir>/Packages/Product2/Backend",
   ],
 };

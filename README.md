@@ -4,12 +4,14 @@ Chapter is an example repo, that demonstrates the effects and capabilities of Nx
 
 | Types                | Number | Status |
 | -------------------- | ------ | ------ |
-| React Application    | 2      | ⚠️     |
+| React Application    | 2      | ✅     |
 | React Libraries      | 1      | ✅     |
 | Typescript Libraries | 1      | ✅     |
 | NextJS Website       | 2      | ✅     |
 | NestJS Backend       | 1      | ✅     |
+| Express Backend      | 1      | ✅     |
 | Golang Backend       | 1      | ✅     |
+| Python Backend       | 1      | ✅     |
 | Kotlin Backend       | 1      | ⚠️     |
 
 On top of that we will create some custom schematics, which will allow us to create Applications and Libraries exactly

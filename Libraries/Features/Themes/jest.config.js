@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: "Features.Themes",
+  displayName: "features.themes",
   preset: "../../../jest.preset.js",
   globals: {
     "ts-jest": {

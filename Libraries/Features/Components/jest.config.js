@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: "Features.Components",
+  displayName: "features.components",
   preset: "../../../jest.preset.js",
   transform: {
     "^.+\\.[tj]sx?$": ["babel-jest", { cwd: __dirname, configFile: "./babel-jest.config.json" }],
