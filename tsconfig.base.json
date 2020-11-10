@@ -20,7 +20,8 @@
     "baseUrl": ".",
     "paths": {
       "@chapter/Features/Themes": ["Libraries/Features/Themes/src/index.ts"],
-      "@chapter/Features/Components": ["Libraries/Features/Components/src/index.ts"]
+      "@chapter/Features/Components": ["Libraries/Features/Components/src/index.ts"],
+      "@chapter/Features/Shared": ["Libraries/Features/Shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

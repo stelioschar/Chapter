@@ -50,6 +50,9 @@
     },
     "Features.Components": {
       "tags": []
+    },
+    "Features.Shared": {
+      "tags": []
     }
   }
 }
