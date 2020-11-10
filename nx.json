@@ -18,7 +18,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -28,13 +33,20 @@
   },
   "projects": {
     "product1.frontend": {
-      "tags": ["SCOPE(PRODUCT1)"]
+      "tags": [
+        "SCOPE(PRODUCT1)"
+      ]
     },
     "product2.frontend": {
-      "tags": ["SCOPE(PRODUCT2)"]
+      "tags": [
+        "SCOPE(PRODUCT2)"
+      ]
     },
     "features.themes": {
-      "tags": ["SCOPE(THEMES)", "SCOPE(FRONTEND)"]
+      "tags": [
+        "SCOPE(THEMES)",
+        "SCOPE(FRONTEND)"
+      ]
     },
     "features.components": {
       "tags": []
@@ -52,6 +64,9 @@
       "tags": []
     },
     "product2.backend": {
+      "tags": []
+    },
+    "mlearning.nlp": {
       "tags": []
     }
   }

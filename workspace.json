@@ -375,6 +375,38 @@
           }
         }
       }
+    },
+    "mlearning.nlp": {
+      "projectType": "application",
+      "root": "Packages/MLearning/NLP",
+      "sourceRoot": "Packages/MLearning/NLP/src",
+      "architect": {
+        "build": {
+          "builder": "@nx-python/nx-python:build",
+          "options": {
+            "outputPath": "dist/Packages/MLearning/NLP",
+            "main": "Packages/MLearning/NLP/src/hello.py"
+          }
+        },
+        "serve": {
+          "builder": "@nx-python/nx-python:serve",
+          "options": {
+            "main": "Packages/MLearning/NLP/src/hello.py"
+          }
+        },
+        "test": {
+          "builder": "@nx-python/nx-python:test",
+          "options": {
+            "main": "Packages/MLearning/NLP/src/test_hello.py"
+          }
+        },
+        "lint": {
+          "builder": "@nx-python/nx-python:lint",
+          "options": {
+            "main": "Packages/MLearning/NLP/src/hello.py"
+          }
+        }
+      }
     }
   },
   "cli": {
