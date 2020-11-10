@@ -27,10 +27,10 @@
     "help": "nx help"
   },
   "lint-staged": {
-    "{Packages,Libraries}*.{js,jsx,ts,tsx,json,md}": [
-      "yarn nx affected --target=lint  --parallel=true --base=main",
-      "yarn nx affected --target=format:write  --parallel=true --base=main",
-      "yarn nx affected --target=test  --parallel=true --base=main"
+    "{Packages,Libraries,Scripts,Tools}*.{js,jsx,ts,tsx,json,md}": [
+      "yarn nx affected --target=lint  --parallel=true --base=origin/main",
+      "yarn nx affected --target=format:write  --parallel=true --base=origin/main",
+      "yarn nx affected --target=test  --parallel=true --base=origin/main"
     ]
   },
   "husky": {
