@@ -24,7 +24,17 @@
       {
         "enforceBuildableLibDependency": true,
         "allow": [],
-        "depConstraints": [{ "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }]
+        "depConstraints": [
+          { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] },
+          {
+            "sourceTag": "SCOPE(PRODUCT1)",
+            "onlyDependOnLibsWithTags": ["SCOPE(PRODUCT1)", "SCOPE(SHARED)", "SCOPE(THEMES)"]
+          },
+          {
+            "sourceTag": "SCOPE(PRODUCT2)",
+            "onlyDependOnLibsWithTags": ["SCOPE(PRODUCT2)", "SCOPE(SHARED)", "SCOPE(THEMES)"]
+          }
+        ]
       }
     ]
   },

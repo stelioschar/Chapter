@@ -44,33 +44,48 @@
     },
     "features.themes": {
       "tags": [
-        "SCOPE(THEMES)",
-        "SCOPE(FRONTEND)"
+        "SCOPE(THEMES)"
       ]
     },
     "features.components": {
-      "tags": []
+      "tags": [
+        "SCOPE(SHARED)"
+      ]
     },
     "features.shared": {
-      "tags": []
+      "tags": [
+        "SCOPE(SHARED)"
+      ]
     },
     "features.product1": {
-      "tags": []
+      "tags": [
+        "SCOPE(PRODUCT1)"
+      ]
     },
     "features.product2": {
-      "tags": []
+      "tags": [
+        "SCOPE(PRODUCT2)"
+      ]
     },
     "product1.backend": {
-      "tags": []
+      "tags": [
+        "SCOPE(PRODUCT1)"
+      ]
     },
     "product2.backend": {
-      "tags": []
+      "tags": [
+        "SCOPE(PRODUCT2)"
+      ]
     },
     "mlearning.nlp": {
-      "tags": []
+      "tags": [
+        "SCOPE(SHARED)"
+      ]
     },
     "product1.cli": {
-      "tags": []
+      "tags": [
+        "SCOPE(PRODUCT1)"
+      ]
     }
   }
 }
