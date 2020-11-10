@@ -86,6 +86,9 @@
       "tags": [
         "SCOPE(PRODUCT1)"
       ]
+    },
+    "product1.website": {
+      "tags": []
     }
   }
 }

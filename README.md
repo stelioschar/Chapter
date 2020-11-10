@@ -82,8 +82,6 @@ in Packages, and around 70%-80% of our code will be placed under Libraries.
 
 That has a lot of advantages. From our CI processes running quicker and effectively to our Dev processes. You can read more about FDD in this [link](https://www.productplan.com/glossary/feature-driven-development/)
 
----
-
 ## JenkinsCI
 
 We have a Jenkinsfile, that will allows us to witness, how dramatic of a differnece, is Nx bringing for a large team on CI/CD.

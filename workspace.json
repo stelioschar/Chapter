@@ -436,6 +436,59 @@
           "builder": "@nx-go/nx-go:lint"
         }
       }
+    },
+    "product1.website": {
+      "root": "Packages/Product1/Website",
+      "sourceRoot": "Packages/Product1/Website",
+      "projectType": "application",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/next:build",
+          "options": {
+            "root": "Packages/Product1/Website",
+            "outputPath": "dist/Packages/Product1/Website"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "product1.website:build",
+            "port": 9060,
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "product1.website:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "builder": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "product1.website:build:production"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "Packages/Product1/Website/**/*.{ts,tsx}"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "Packages/Product1/Website/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
@@ -452,6 +505,12 @@
         "style": "@emotion/styled"
       },
       "library": {
+        "style": "@emotion/styled",
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/next": {
+      "application": {
         "style": "@emotion/styled",
         "linter": "eslint"
       }
