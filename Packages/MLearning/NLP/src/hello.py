@@ -5,5 +5,5 @@ class HelloFactory:
 
 
 if __name__ == '__main__':
-    hello = HelloFactory(application="mlearning-nlp", user="Human")
+    hello = HelloFactory(application="mlearning-nlp", user="HumanSelf")
     print(hello.application)

@@ -407,6 +407,35 @@
           }
         }
       }
+    },
+    "product1.cli": {
+      "projectType": "application",
+      "root": "Packages/Product1/CLI",
+      "sourceRoot": "Packages/Product1/CLI/src",
+      "architect": {
+        "build": {
+          "builder": "@nx-go/nx-go:build",
+          "options": {
+            "outputPath": "dist/Packages/Product1/CLI",
+            "main": "Packages/Product1/CLI/src/main.go"
+          }
+        },
+        "serve": {
+          "builder": "@nx-go/nx-go:serve",
+          "options": {
+            "main": "Packages/Product1/CLI/src/main.go"
+          }
+        },
+        "test": {
+          "builder": "@nx-go/nx-go:test",
+          "options": {
+            "main": "Packages/Product1/CLI/src/main_test.go"
+          }
+        },
+        "lint": {
+          "builder": "@nx-go/nx-go:lint"
+        }
+      }
     }
   },
   "cli": {

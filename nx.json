@@ -68,6 +68,9 @@
     },
     "mlearning.nlp": {
       "tags": []
+    },
+    "product1.cli": {
+      "tags": []
     }
   }
 }
