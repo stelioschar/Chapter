@@ -1,4 +1,4 @@
-# Chpater
+# Chapter
 
 Chapter is an example repo, that demonstrates the effects and capabilities of Nx. We will use Nx, to create:
 
